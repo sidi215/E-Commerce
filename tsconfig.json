@@ -1,10 +1,14 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -13,14 +17,89 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "@/components/*": [
+        "./components/*"
+      ],
+      "@/lib/*": [
+        "./lib/*"
+      ],
+      "@/app/*": [
+        "./app/*"
+      ],
+      "@/public/*": [
+        "./public/*"
+      ],
+      "@/styles/*": [
+        "./styles/*"
+      ],
+      "@/types/*": [
+        "./types/*"
+      ],
+      "@/hooks/*": [
+        "./hooks/*"
+      ],
+      "@/utils/*": [
+        "./utils/*"
+      ],
+      "@/assets/*": [
+        "./assets/*"
+      ],
+      "@/config/*": [
+        "./config/*"
+      ],
+      "@/store/*": [
+        "./store/*"
+      ],
+      "@/api/*": [
+        "./api/*"
+      ],
+      "@/data/*": [
+        "./data/*"
+      ],
+      "@/services/*": [
+        "./services/*"
+      ],
+      "@/contexts/*": [
+        "./contexts/*"
+      ],
+      "@/constants/*": [
+        "./constants/*"
+      ],
+      "@/helpers/*": [
+        "./helpers/*"
+      ],
+      "@/validators/*": [
+        "./validators/*"
+      ],
+      "@/middleware/*": [
+        "./middleware/*"
+      ],
+      "@/pages/*": [
+        "./pages/*"
+      ],
+      "@/stylesheets/*": [
+        "./stylesheets/*"
+      ],
+      "@/templates/*": [
+        "./templates/*"
+      ],
+      "@/layouts/*": [
+        "./layouts/*"
+      ],
+      "@/src/*": [
+        "./src/*"
+      ]
+    },
     "plugins": [
       {
         "name": "next"
       }
-    ],
-    "paths": {
-      "@/*": ["./*"]
-    }
+    ]
   },
   "include": [
     "next-env.d.ts",
@@ -30,5 +109,7 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

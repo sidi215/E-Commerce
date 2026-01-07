@@ -1,0 +1,605 @@
+{
+  "common": {
+    "welcome": "Bienvenue",
+    "home": "Accueil",
+    "about": "À propos",
+    "login": "Connexion",
+    "register": "Inscription",
+    "logout": "Déconnexion",
+    "profile": "Profil",
+    "dashboard": "Tableau de bord",
+    "admin": "Admin",
+    "marketplace": "Marché",
+    "diagnostic": "Diagnostic",
+    "language": "Langue",
+    "search": "Rechercher",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "view": "Voir",
+    "close": "Fermer",
+    "submit": "Envoyer",
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "optional": "optionnel",
+    "cart": "Panier",
+    "cartDescription": "Gérez vos articles et finalisez votre commande",
+    "emptyCart": "Votre panier est vide",
+    "emptyCartDesc": "Ajoutez des produits depuis le marketplace pour commencer",
+    "continueShopping": "Continuer vos achats",
+    "cartItems": "Articles du panier",
+    "orderSummary": "Résumé de la commande",
+    "subtotal": "Sous-total",
+    "delivery": "Livraison",
+    "total": "Total",
+    "proceedToCheckout": "Finaliser la commande",
+    "myOrders": "Mes Commandes",
+    "ordersDescription": "Suivez l'état de vos commandes",
+    "noOrders": "Vous n'avez pas encore de commandes",
+    "noOrdersDesc": "Commencez vos achats pour voir vos commandes ici",
+    "startShopping": "Commencer vos achats",
+    "order": "Commande",
+    "orderDate": "Date de commande",
+    "orderItems": "Articles de la commande",
+    "delivered": "Livrée",
+    "processing": "En cours",
+    "cancelled": "Annulée",
+    "trackOrder": "Suivre la commande",
+    "reorder": "Recommander"
+  },
+  "navbar": {
+    "title": "AgriMauritanie",
+    "home": "Accueil",
+    "about": "À propos",
+    "marketplace": "Marché",
+    "diagnostic": "Diagnostic",
+    "dashboard": "Tableau de bord",
+    "profile": "Profil",
+    "admin": "⚙️ Admin",
+    "login": "Connexion",
+    "register": "Inscription",
+    "buyers": "Acheteurs",
+    "farmers": "Agriculteurs",
+    "messaging": "Messages"
+  },
+  "home": {
+    "title": "Bienvenue sur AgriMauritanie",
+    "subtitle": "Connectez vos villages agricoles aux marchés des villes mauritaniennes avec des outils intelligents pour améliorer vos revenus",
+    "getStarted": "Commencer maintenant",
+    "learnMore": "En savoir plus",
+    "services": "Nos Services",
+    "aiDiagnostic": "Diagnostic IA",
+    "aiDiagnosticDesc": "Identifiez les maladies de vos plantes en quelques secondes avec notre modèle d'intelligence artificielle. Précision de 85-90%.",
+    "tryNow": "Essayer maintenant",
+    "seeMore": "Voir plus",
+    "digitalMarket": "Marché Numérique",
+    "digitalMarketDesc": "Vendez vos produits directement aux commerçants des villes. Connectez-vous aux marchés de Nouakchott, Nouadhibou, Kiffa et plus encore.",
+    "viewMarket": "Voir le marché",
+    "weatherAdvice": "Conseils Météo",
+    "weatherAdviceDesc": "Recevez des conseils météorologiques adaptés au climat mauritanien pour optimiser vos récoltes et protéger vos cultures.",
+    "viewForecast": "Voir les prévisions",
+    "stats": {
+      "activeFarmers": "Agriculteurs actifs",
+      "detectableDiseases": "Maladies détectables",
+      "aiAccuracy": "Précision IA",
+      "regionsCovered": "Régions couvertes"
+    },
+    "howItWorks": "Comment ça marche ?",
+    "step1": "Inscrivez-vous",
+    "step1Desc": "Créez votre compte gratuitement en quelques minutes",
+    "step2": "Ajoutez vos plantes",
+    "step2Desc": "Enregistrez vos cultures et suivez leur santé",
+    "step3": "Diagnostiquez",
+    "step3Desc": "Utilisez l'IA pour identifier les maladies rapidement",
+    "step4": "Vendez",
+    "step4Desc": "Mettez vos produits sur le marché numérique",
+    "cta": {
+      "title": "Prêt à améliorer vos revenus agricoles ?",
+      "subtitle": "Rejoignez des centaines d'agriculteurs mauritaniens qui utilisent déjà notre plateforme",
+      "button": "Créer un compte gratuit"
+    }
+  },
+  "login": {
+    "title": "Connexion",
+    "subtitle": "Accédez à votre compte AgriMauritanie",
+    "email": "Email ou Téléphone",
+    "password": "Mot de passe",
+    "rememberMe": "Se souvenir de moi",
+    "forgotPassword": "Mot de passe oublié ?",
+    "submit": "Se connecter",
+    "noAccount": "Pas encore de compte ?",
+    "createAccount": "Créer un compte"
+  },
+  "register": {
+    "title": "Créer un compte",
+    "subtitle": "Rejoignez la communauté AgriMauritanie",
+    "accountType": "Type de compte",
+    "farmer": "Agriculteur",
+    "buyer": "Acheteur",
+    "fullName": "Nom complet",
+    "email": "Email",
+    "phone": "Téléphone",
+    "region": "Région",
+    "selectRegion": "Sélectionnez une région",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "acceptTerms": "J'accepte les",
+    "readTerms": "conditions d'utilisation",
+    "submit": "Créer mon compte",
+    "hasAccount": "Déjà un compte ?",
+    "login": "Se connecter",
+    "profilePhoto": "Photo de profil",
+    "optional": "optionnel",
+    "choosePhoto": "Choisir une photo",
+    "changePhoto": "Changer la photo",
+    "photoHint": "Format JPG, PNG ou GIF (max 5MB)"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "subtitle": "Bienvenue sur votre espace agricole",
+    "registeredPlants": "Plantes enregistrées",
+    "productsSold": "Produits vendus",
+    "revenue": "Revenus (MRU)",
+    "pendingOrders": "Commandes en cours",
+    "period": {
+      "week": "Semaine",
+      "month": "Mois",
+      "year": "Année"
+    },
+    "recentPlants": "Mes plantes récentes",
+    "viewAll": "Voir tout",
+    "weather": {
+      "title": "Météo locale",
+      "humidity": "Humidité",
+      "wind": "Vent",
+      "rain": "Pluie",
+      "advice": "Conseil : Conditions idéales pour l'arrosage en fin de journée."
+    },
+    "quickActions": {
+      "title": "Actions rapides",
+      "newDiagnostic": "🔍 Nouveau diagnostic",
+      "viewMarket": "🛒 Voir le marché",
+      "viewMap": "Voir la carte des agriculteurs",
+      "addPlant": "🌱 Ajouter une plante"
+    },
+    "productSearch": {
+      "title": "Recherche de produits",
+      "searchLabel": "Rechercher",
+      "placeholder": "Rechercher par nom de produit ou nom d'agriculteur...",
+      "hint": "Tapez le nom d'un produit ou d'un agriculteur pour trouver ce que vous cherchez",
+      "results": "Résultats de recherche",
+      "noResults": "Aucun résultat trouvé",
+      "noResultsDesc": "Essayez de modifier vos critères de recherche"
+    }
+  },
+  "diagnostic": {
+    "title": "Diagnostic IA des Maladies",
+    "subtitle": "Prenez une photo de votre plante malade et obtenez un diagnostic en quelques secondes",
+    "accuracy": "Précision : 85-90% | Toujours vérifier avec un expert en cas de doute",
+    "step1": "Étape 1 : Télécharger une photo",
+    "uploadPhoto": "Cliquez pour télécharger ou glissez-déposez une image",
+    "chooseFile": "Choisir un fichier",
+    "changeImage": "Changer l'image",
+    "step2": "Étape 2 : Analyser",
+    "tip": "Conseil : Pour de meilleurs résultats, prenez la photo en plein jour avec une bonne lumière, en vous concentrant sur les parties affectées de la plante (feuilles, tiges, fruits).",
+    "analyze": "🔬 Lancer l'analyse IA",
+    "analyzing": "Analyse en cours...",
+    "result": {
+      "title": "Résultat du Diagnostic",
+      "confidence": "de confiance",
+      "treatment": "Traitement recommandé :",
+      "important": "Important : Ce diagnostic est fourni à titre informatif. En cas de doute ou pour des cas graves, consultez toujours un expert agricole.",
+      "newDiagnostic": "Nouveau diagnostic"
+    },
+    "supportedDiseases": "Maladies supportées"
+  },
+  "diagnosticDetails": {
+    "title": "Diagnostic IA des Maladies",
+    "subtitle": "Découvrez comment notre intelligence artificielle peut vous aider à protéger vos cultures",
+    "accuracy": "Précision : 85-90% | Toujours vérifier avec un expert en cas de doute",
+    "features": {
+      "speed": {
+        "title": "Rapide",
+        "description": "Diagnostic en quelques secondes"
+      },
+      "accuracy": {
+        "title": "Précis",
+        "description": "85-90% de précision"
+      },
+      "easy": {
+        "title": "Simple",
+        "description": "Prenez une photo et obtenez un résultat"
+      },
+      "variety": {
+        "title": "Variété",
+        "description": "15+ maladies détectables"
+      }
+    },
+    "howItWorks": {
+      "title": "Comment ça marche ?",
+      "step1": {
+        "title": "Prenez une photo",
+        "description": "Photographiez la partie affectée de votre plante (feuilles, tiges, fruits) en plein jour avec une bonne lumière."
+      },
+      "step2": {
+        "title": "Téléchargez l'image",
+        "description": "Uploadez la photo sur notre plateforme. Notre système accepte les formats JPG, PNG et JPEG."
+      },
+      "step3": {
+        "title": "Analyse IA",
+        "description": "Notre modèle d'intelligence artificielle analyse l'image et compare avec une base de données de milliers de maladies de plantes."
+      },
+      "step4": {
+        "title": "Obtenez le résultat",
+        "description": "Recevez un diagnostic détaillé avec le nom de la maladie, le niveau de confiance, une description et des traitements recommandés."
+      }
+    },
+    "diseases": {
+      "title": "Maladies détectables",
+      "description": "Notre système peut identifier les maladies courantes pour les cultures suivantes :"
+    },
+    "cta": {
+      "title": "Prêt à protéger vos cultures ?",
+      "subtitle": "Créez un compte gratuitement pour accéder au diagnostic IA et à tous nos outils",
+      "createAccount": "Créer un compte",
+      "contactUs": "Nous contacter"
+    },
+    "tryNow": "Essayer maintenant"
+  },
+  "marketplace": {
+    "title": "Marché Numérique",
+    "subtitle": "Achetez directement auprès des agriculteurs mauritaniens",
+    "search": "Rechercher",
+    "searchPlaceholder": "Nom du produit ou agriculteur...",
+    "region": "Région",
+    "category": "Catégorie",
+    "all": "Tous",
+    "vegetables": "Légumes",
+    "fruits": "Fruits",
+    "cereals": "Céréales",
+    "other": "Autres",
+    "addToCart": "Ajouter au panier",
+    "availableStock": "Stock disponible",
+    "limitedStock": "Stock limité",
+    "noProducts": "Aucun produit trouvé",
+    "noProductsDesc": "Essayez de modifier vos critères de recherche",
+    "howItWorks": {
+      "title": "Comment ça marche ?",
+      "browse": "Parcourir",
+      "browseDesc": "Explorez les produits disponibles par région et catégorie",
+      "order": "Commander",
+      "orderDesc": "Ajoutez les produits à votre panier et passez commande",
+      "delivery": "Livraison",
+      "deliveryDesc": "Recevez vos produits directement de l'agriculteur"
+    }
+  },
+  "footer": {
+    "description": "Connectant les agriculteurs mauritaniens aux marchés locaux avec des outils intelligents pour améliorer leurs revenus.",
+    "quickLinks": "Liens rapides",
+    "home": "Accueil",
+    "about": "À propos",
+    "marketplace": "Marché",
+    "diagnostic": "Diagnostic",
+    "services": "Services",
+    "diagnosticML": "Diagnostic ML",
+    "digitalMarket": "Marché numérique",
+    "weatherAdvice": "Conseils Météo",
+    "contact": "Contact",
+    "location": "Nouakchott, Mauritanie",
+    "rights": "Tous droits réservés"
+  },
+  "buyers": {
+    "title": "Espace Acheteurs",
+    "subtitle": "Trouvez et contactez les agriculteurs près de chez vous",
+    "search": "Rechercher",
+    "searchPlaceholder": "Nom du produit ou nom de l'agriculteur...",
+    "region": "Région",
+    "all": "Tous",
+    "category": "Catégorie",
+    "map": {
+      "title": "Carte des Agriculteurs",
+      "noFarmers": "Aucun agriculteur trouvé",
+      "greenMarker": "Produits disponibles",
+      "redMarker": "Pas de produits disponibles",
+      "clickToView": "Cliquez pour voir les détails"
+    },
+    "filters": {
+      "search": "Rechercher un agriculteur",
+      "region": "Filtrer par région",
+      "product": "Filtrer par produit"
+    },
+    "farmerCard": {
+      "products": "Produits",
+      "contact": "Contacter",
+      "viewProfile": "Voir le profil",
+      "sendMessage": "Envoyer un message"
+    }
+  },
+  "farmers": {
+    "title": "Espace Agriculteurs",
+    "subtitle": "Gérez vos produits et contactez les acheteurs",
+    "myProducts": "Mes Produits",
+    "addProduct": "Ajouter un produit",
+    "editProduct": "Modifier",
+    "deleteProduct": "Supprimer",
+    "status": {
+      "available": "Disponible",
+      "outOfStock": "Rupture de stock"
+    },
+    "stats": {
+      "totalProducts": "Total produits",
+      "availableProducts": "Produits disponibles",
+      "orders": "Commandes",
+      "messages": "Messages"
+    },
+    "searchProducts": "Rechercher mes produits",
+    "searchPlaceholder": "Rechercher par nom, catégorie ou description...",
+    "productsFound": "produit(s) trouvé(s)",
+    "noProductsFound": "Aucun produit trouvé",
+    "noProductsFoundDesc": "Aucun produit ne correspond à votre recherche. Essayez de modifier vos critères.",
+    "clearSearch": "Effacer la recherche",
+    "clear": "Effacer",
+    "quickActions": {
+      "diagnostic": {
+        "title": "Diagnostic IA",
+        "description": "Identifiez les maladies de vos plantes en quelques secondes avec notre intelligence artificielle",
+        "button": "Diagnostiquer"
+      },
+      "weather": {
+        "title": "Conseils Météo",
+        "description": "Consultez les prévisions météo et recevez des conseils adaptés pour vos cultures",
+        "button": "Voir la météo"
+      },
+      "chat": {
+        "title": "Chat Intelligent",
+        "description": "Obtenez des conseils personnalisés et des réponses à vos questions agricoles",
+        "button": "Ouvrir le chat"
+      }
+    },
+    "price": "Prix",
+    "quantity": "Quantité",
+    "productImage": "Photo du produit",
+    "changeImage": "Changer la photo",
+    "chooseImage": "Choisir une photo",
+    "productName": "Nom du produit",
+    "priceMRU": "Prix (MRU)",
+    "unit": "Unité",
+    "category": "Catégorie",
+    "categories": {
+      "vegetables": "Légumes",
+      "fruits": "Fruits",
+      "cereals": "Céréales",
+      "other": "Autres"
+    },
+    "productDescription": "Description du produit",
+    "descriptionPlaceholder": "Décrivez votre produit (qualité, origine, utilisation, etc.)",
+    "messaging": "Messagerie",
+    "contactBuyers": "Contacter les acheteurs",
+    "viewMessages": "Voir les messages",
+    "recentProducts": "Produits récents",
+    "recentSales": "Ventes récentes",
+    "buyer": "Acheteur",
+    "available": "disponible",
+    "description": "Description",
+    "cancel": "Annuler",
+    "addFirstProduct": "Ajouter mon premier produit",
+    "noProductsYet": "Aucun produit encore",
+    "noProductsYetDesc": "Commencez par ajouter votre premier produit pour le vendre sur la plateforme",
+    "markAvailable": "Marquer comme disponible",
+    "markUnavailable": "Marquer comme indisponible",
+    "mySales": "Mes Ventes",
+    "manageSales": "Gérer mes ventes",
+    "viewSales": "Voir les ventes",
+    "or": "ou",
+    "enterUrl": "entrer une URL",
+    "imageUrlPlaceholder": "https://exemple.com/photo.jpg",
+    "searchProducts": "Rechercher des produits...",
+    "productsFound": "produits trouvés",
+    "noProductsFound": "Aucun produit trouvé",
+    "noProductsFoundDesc": "Essayez de modifier votre recherche ou ajoutez de nouveaux produits",
+    "clearSearch": "Effacer la recherche"
+  },
+  "messaging": {
+    "title": "Messagerie",
+    "subtitle": "Communiquez avec les agriculteurs/acheteurs",
+    "noConversations": "Aucune conversation",
+    "noResults": "Aucun résultat trouvé",
+    "searchPlaceholder": "Rechercher par nom...",
+    "selectConversation": "Sélectionnez une conversation pour commencer",
+    "typeMessage": "Tapez votre message...",
+    "send": "Envoyer",
+    "online": "En ligne",
+    "offline": "Hors ligne",
+    "newMessage": "Nouveau message",
+    "conversations": "Conversations",
+    "with": "Avec",
+    "viewProfile": "Voir le profil"
+  },
+  "farmerProfile": {
+    "profile": "Profil de l'agriculteur",
+    "phone": "Téléphone",
+    "email": "Email",
+    "memberSince": "Membre depuis",
+    "statistics": "Statistiques",
+    "totalProducts": "Produits publiés",
+    "availableProducts": "Produits disponibles",
+    "totalSales": "Ventes totales",
+    "totalRevenue": "Revenus totaux",
+    "products": "Produits",
+    "available": "disponibles",
+    "noProducts": "Aucun produit disponible",
+    "sendMessage": "Envoyer un message",
+    "call": "Appeler"
+  },
+  "terms": {
+    "title": "Conditions d'utilisation",
+    "subtitle": "Veuillez lire attentivement les conditions d'utilisation de la plateforme AgriMauritanie",
+    "section1": {
+      "title": "1. Acceptation des conditions",
+      "content": "En accédant et en utilisant la plateforme AgriMauritanie, vous acceptez d'être lié par ces conditions d'utilisation. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser notre plateforme."
+    },
+    "section2": {
+      "title": "2. Description du service",
+      "content": "AgriMauritanie est une plateforme numérique qui connecte les agriculteurs mauritaniens aux marchés locaux. Nos services incluent :",
+      "item1": "Un marché numérique pour la vente de produits agricoles",
+      "item2": "Un système de diagnostic IA pour les maladies des plantes",
+      "item3": "Des outils de gestion pour les agriculteurs",
+      "item4": "Un système de messagerie entre agriculteurs et acheteurs"
+    },
+    "section3": {
+      "title": "3. Compte utilisateur",
+      "content": "Pour utiliser nos services, vous devez créer un compte. Vous êtes responsable de :",
+      "item1": "Maintenir la confidentialité de vos identifiants de connexion",
+      "item2": "Fournir des informations exactes et à jour",
+      "item3": "Toutes les activités qui se produisent sous votre compte",
+      "item4": "Notifier immédiatement toute utilisation non autorisée de votre compte"
+    },
+    "section4": {
+      "title": "4. Produits et transactions",
+      "content": "Les agriculteurs sont responsables de la qualité et de la description exacte de leurs produits. Les transactions sont effectuées directement entre les parties. AgriMauritanie agit uniquement comme une plateforme de mise en relation et n'est pas responsable des litiges entre utilisateurs."
+    },
+    "section5": {
+      "title": "5. Propriété intellectuelle",
+      "content": "Tous les contenus de la plateforme, y compris les textes, graphiques, logos et logiciels, sont la propriété d'AgriMauritanie ou de ses concédants de licence et sont protégés par les lois sur la propriété intellectuelle."
+    },
+    "section6": {
+      "title": "6. Limitation de responsabilité",
+      "content": "AgriMauritanie ne garantit pas l'exactitude, l'exhaustivité ou l'utilité des informations fournies. Nous ne serons pas responsables des dommages directs, indirects, accessoires ou consécutifs résultant de l'utilisation de notre plateforme."
+    },
+    "acceptance": {
+      "title": "Acceptation des conditions",
+      "content": "En cochant la case d'acceptation lors de votre inscription, vous confirmez avoir lu, compris et accepté ces conditions d'utilisation dans leur intégralité."
+    },
+    "lastUpdated": "Dernière mise à jour",
+    "backToRegister": "Retour à l'inscription"
+  },
+  "about": {
+    "title": "À propos d'AgriMauritanie",
+    "subtitle": "Connecter les villages agricoles aux marchés urbains avec des outils intelligents",
+    "mission": {
+      "title": "Notre Mission",
+      "paragraph1": "AgriMauritanie est une plateforme numérique innovante conçue spécifiquement pour les agriculteurs mauritaniens.",
+      "paragraph2": "Notre objectif est de connecter les villages agricoles aux marchés des villes mauritaniennes, en utilisant la technologie pour améliorer les revenus et la qualité de vie des agriculteurs."
+    },
+    "objectives": {
+      "title": "Nos Objectifs",
+      "item1": "Connecter les villages aux marchés urbains",
+      "item2": "Identifier les maladies avec l'IA (85-90% de précision)",
+      "item3": "Fournir des conseils météo adaptés",
+      "item4": "Créer un marché numérique efficace",
+      "item5": "Améliorer les revenus des agriculteurs"
+    },
+    "cta": {
+      "title": "Prêt à améliorer vos revenus agricoles ?",
+      "subtitle": "Rejoignez des centaines d'agriculteurs mauritaniens qui utilisent déjà notre plateforme. Créez votre compte gratuitement et commencez à vendre dès aujourd'hui.",
+      "button": "Créer un compte gratuit"
+    },
+    "deployment": {
+      "title": "📅 Plan de Déploiement",
+      "phase1": {
+        "title": "Phase 1 - Lancement (3 mois)",
+        "item1": "Services gratuits pour tous",
+        "item2": "10-15 maladies de plantes reconnues",
+        "item3": "Météo locale avec conseils",
+        "item4": "50 agriculteurs actifs minimum",
+        "item5": "Aucune commission sur les transactions",
+        "item6": "Objectif : Construire communauté et confiance"
+      },
+      "phase2": {
+        "title": "Phase 2 - Croissance (à partir du 4ème mois)",
+        "item1": "Commissions modérées sur les ventes",
+        "item2": "Abonnements Premium disponibles",
+        "item3": "Assistant vocal en dialectes locaux",
+        "item4": "Chat intelligent pour conseils",
+        "item5": "Recommandations personnalisées",
+        "item6": "Diagnostics plus précis"
+      }
+    },
+    "join": {
+      "title": "🤝 Rejoignez-nous",
+      "description": "Que vous soyez agriculteur ou acheteur, AgriMauritanie vous offre les outils nécessaires pour réussir dans le marché agricole mauritanien.",
+      "createAccount": "Créer un compte",
+      "contactUs": "Nous contacter"
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Nous sommes là pour vous aider. N'hésitez pas à nous contacter !",
+    "email": {
+      "title": "Email",
+      "description": "Envoyez-nous un email et nous vous répondrons dans les plus brefs délais"
+    },
+    "phone": {
+      "title": "Téléphone",
+      "description": "Appelez-nous pour toute question ou assistance"
+    },
+    "form": {
+      "title": "Formulaire de contact",
+      "name": "Nom complet",
+      "namePlaceholder": "Votre nom",
+      "email": "Email",
+      "emailPlaceholder": "votre@email.com",
+      "subject": "Sujet",
+      "subjectPlaceholder": "Sujet de votre message",
+      "message": "Message",
+      "messagePlaceholder": "Votre message...",
+      "submit": "Envoyer le message"
+    },
+    "backToHome": "Retour à l'accueil"
+  },
+  "weatherDetails": {
+    "title": "Conseils Météo",
+    "subtitle": "Optimisez vos récoltes avec des prévisions météo adaptées",
+    "description": "Recevez des conseils personnalisés basés sur les conditions météorologiques mauritaniennes",
+    "features": {
+      "temperature": {
+        "title": "Température",
+        "description": "Surveillez les températures pour protéger vos cultures"
+      },
+      "rainfall": {
+        "title": "Précipitations",
+        "description": "Planifiez l'irrigation selon les prévisions de pluie"
+      },
+      "wind": {
+        "title": "Vent",
+        "description": "Protégez vos cultures des vents forts"
+      },
+      "uv": {
+        "title": "UV",
+        "description": "Gérez l'exposition au soleil de vos plantes"
+      }
+    },
+    "howItWorks": {
+      "title": "Comment ça marche ?",
+      "step1": {
+        "title": "Prévisions locales",
+        "description": "Recevez des prévisions météo précises pour votre région en Mauritanie (Guidimaka, Gorgol, Brakna, Tarza)."
+      },
+      "step2": {
+        "title": "Conseils personnalisés",
+        "description": "Obtenez des recommandations adaptées à vos cultures spécifiques basées sur les conditions météorologiques."
+      },
+      "step3": {
+        "title": "Alertes en temps réel",
+        "description": "Soyez averti des conditions météo extrêmes (tempêtes, sécheresse, gel) pour protéger vos récoltes."
+      }
+    },
+    "benefits": {
+      "title": "Avantages",
+      "item1": "Optimisation de l'irrigation selon les prévisions de pluie",
+      "item2": "Protection des cultures contre les conditions météo extrêmes",
+      "item3": "Planification optimale des récoltes",
+      "item4": "Réduction des pertes dues aux intempéries"
+    },
+    "cta": {
+      "title": "Prêt à optimiser vos récoltes ?",
+      "subtitle": "Créez un compte gratuitement pour accéder aux conseils météo et à tous nos outils",
+      "createAccount": "Créer un compte",
+      "contactUs": "Nous contacter"
+    },
+    "viewWeather": "Voir la météo"
+  }
+}
+

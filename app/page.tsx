@@ -6,8 +6,14 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-green-50 to-green-100 py-20 px-4">
-        <div className="max-w-7xl mx-auto text-center">
+      <section className="bg-gradient-to-br from-green-50 via-green-100 to-green-50 py-20 px-4 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-green-400 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+          <div className="absolute top-40 right-10 w-72 h-72 bg-green-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-700"></div>
+          <div className="absolute -bottom-8 left-1/2 w-72 h-72 bg-green-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
+        </div>
+        <div className="max-w-7xl mx-auto text-center relative z-10">
+          <div className="animate-fade-in">
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
             🌾 Bienvenue sur <span className="text-green-600">AgriMauritanie</span>
           </h1>
@@ -17,15 +23,16 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/register">
-              <Button size="lg" variant="primary">
+                <Button size="lg" variant="primary" className="transform hover:scale-105">
                 Commencer maintenant
               </Button>
             </Link>
             <Link href="/about">
-              <Button size="lg" variant="outline">
+                <Button size="lg" variant="outline" className="transform hover:scale-105">
                 En savoir plus
               </Button>
             </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -33,12 +40,12 @@ export default function Home() {
       {/* Features Section */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12">
+          <h2 className="text-4xl font-bold text-center text-gray-900 mb-12 animate-fade-in">
             Nos Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card hover className="text-center">
-              <div className="text-6xl mb-4">🤖</div>
+            <Card hover className="text-center animate-scale-in" style={{ animationDelay: '0.1s' }}>
+              <div className="text-6xl mb-4 transform hover:scale-110 transition-transform duration-300">🤖</div>
               <h3 className="text-2xl font-semibold mb-3">Diagnostic IA</h3>
               <p className="text-gray-600 mb-4">
                 Identifiez les maladies de vos plantes en quelques secondes avec notre modèle d'intelligence artificielle. 
@@ -51,8 +58,8 @@ export default function Home() {
               </Link>
             </Card>
 
-            <Card hover className="text-center">
-              <div className="text-6xl mb-4">🛒</div>
+            <Card hover className="text-center animate-scale-in" style={{ animationDelay: '0.2s' }}>
+              <div className="text-6xl mb-4 transform hover:scale-110 transition-transform duration-300">🛒</div>
               <h3 className="text-2xl font-semibold mb-3">Marché Numérique</h3>
               <p className="text-gray-600 mb-4">
                 Vendez vos produits directement aux commerçants des villes. 
@@ -65,8 +72,8 @@ export default function Home() {
               </Link>
             </Card>
 
-            <Card hover className="text-center">
-              <div className="text-6xl mb-4">🌤️</div>
+            <Card hover className="text-center animate-scale-in" style={{ animationDelay: '0.3s' }}>
+              <div className="text-6xl mb-4 transform hover:scale-110 transition-transform duration-300">🌤️</div>
               <h3 className="text-2xl font-semibold mb-3">Conseils Météo</h3>
               <p className="text-gray-600 mb-4">
                 Recevez des conseils météorologiques adaptés au climat mauritanien 

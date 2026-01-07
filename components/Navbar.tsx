@@ -2,60 +2,88 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { useTranslations, useLocale } from 'next-intl';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false); // À connecter avec l'état d'authentification
+  const t = useTranslations('navbar');
+  const locale = useLocale();
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-white shadow-md sticky top-0 z-50 backdrop-blur-sm bg-opacity-95">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-700 rounded-lg flex items-center justify-center">
+          <Link href="/" className="flex items-center space-x-2 group">
+            <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-700 rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
               <span className="text-white font-bold text-xl">🌾</span>
             </div>
-            <span className="text-xl font-bold text-green-700">AgriMauritanie</span>
+            <span className="text-xl font-bold text-green-700 group-hover:text-green-600 transition-colors">{t('title')}</span>
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6">
-            <Link href="/" className="text-gray-700 hover:text-green-600 transition-colors">
-              Accueil
+            <Link href={`/${locale}`} className="text-gray-700 hover:text-green-600 transition-colors relative group">
+              {t('home')}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300"></span>
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-green-600 transition-colors">
-              À propos
+            <Link href={`/${locale}/about`} className="text-gray-700 hover:text-green-600 transition-colors relative group">
+              {t('about')}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300"></span>
             </Link>
-            <Link href="/marketplace" className="text-gray-700 hover:text-green-600 transition-colors">
-              Marché
+            <Link href={`/${locale}/marketplace`} className="text-gray-700 hover:text-green-600 transition-colors relative group">
+              {t('marketplace')}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300"></span>
             </Link>
-            <Link href="/diagnostic" className="text-gray-700 hover:text-green-600 transition-colors">
-              Diagnostic
+            <Link href={`/${locale}/diagnostic/details`} className="text-gray-700 hover:text-green-600 transition-colors relative group">
+              {t('diagnostic')}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300"></span>
             </Link>
             
             {isLoggedIn ? (
               <>
-                <Link href="/dashboard" className="text-gray-700 hover:text-green-600 transition-colors">
-                  Tableau de bord
+                <Link href={`/${locale}/dashboard`} className="text-gray-700 hover:text-green-600 transition-colors relative group">
+                  {t('dashboard')}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300"></span>
                 </Link>
-                <Link href="/profile" className="text-gray-700 hover:text-green-600 transition-colors">
-                  Profil
+                <Link href={`/${locale}/buyers`} className="text-gray-700 hover:text-green-600 transition-colors relative group">
+                  🛒 {t('buyers')}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300"></span>
                 </Link>
-                <button className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors">
-                  Déconnexion
+                <Link href={`/${locale}/farmers`} className="text-gray-700 hover:text-green-600 transition-colors relative group">
+                  👨‍🌾 {t('farmers')}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300"></span>
+                </Link>
+                <Link href={`/${locale}/messaging`} className="text-gray-700 hover:text-green-600 transition-colors relative group">
+                  💬 {t('messaging')}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300"></span>
+                </Link>
+                <Link href={`/${locale}/profile`} className="text-gray-700 hover:text-green-600 transition-colors relative group">
+                  {t('profile')}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300"></span>
+                </Link>
+                <Link href={`/${locale}/admin/dashboard`} className="text-gray-700 hover:text-green-600 transition-colors relative group">
+                  {t('admin')}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300"></span>
+                </Link>
+                <button className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-all duration-200 hover:shadow-lg active:scale-95">
+                  {t('logout')}
                 </button>
               </>
             ) : (
               <div className="flex items-center space-x-3">
-                <Link href="/login" className="text-gray-700 hover:text-green-600 transition-colors">
-                  Connexion
+                <Link href={`/${locale}/login`} className="text-gray-700 hover:text-green-600 transition-colors relative group">
+                  {t('login')}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-600 group-hover:w-full transition-all duration-300"></span>
                 </Link>
-                <Link href="/register" className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors">
-                  Inscription
+                <Link href={`/${locale}/register`} className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-all duration-200 hover:shadow-lg active:scale-95">
+                  {t('register')}
                 </Link>
               </div>
             )}
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
@@ -75,23 +103,30 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 space-y-3">
-            <Link href="/" className="block text-gray-700 hover:text-green-600">Accueil</Link>
-            <Link href="/about" className="block text-gray-700 hover:text-green-600">À propos</Link>
-            <Link href="/marketplace" className="block text-gray-700 hover:text-green-600">Marché</Link>
-            <Link href="/diagnostic" className="block text-gray-700 hover:text-green-600">Diagnostic</Link>
+          <div className="md:hidden py-4 space-y-3 animate-fade-in">
+            <Link href={`/${locale}`} className="block text-gray-700 hover:text-green-600">{t('home')}</Link>
+            <Link href={`/${locale}/about`} className="block text-gray-700 hover:text-green-600">{t('about')}</Link>
+            <Link href={`/${locale}/marketplace`} className="block text-gray-700 hover:text-green-600">{t('marketplace')}</Link>
+            <Link href={`/${locale}/diagnostic/details`} className="block text-gray-700 hover:text-green-600">{t('diagnostic')}</Link>
             {isLoggedIn ? (
               <>
-                <Link href="/dashboard" className="block text-gray-700 hover:text-green-600">Tableau de bord</Link>
-                <Link href="/profile" className="block text-gray-700 hover:text-green-600">Profil</Link>
-                <button className="block w-full text-left text-red-500">Déconnexion</button>
+                <Link href={`/${locale}/dashboard`} className="block text-gray-700 hover:text-green-600">{t('dashboard')}</Link>
+                <Link href={`/${locale}/buyers`} className="block text-gray-700 hover:text-green-600">🛒 {t('buyers')}</Link>
+                <Link href={`/${locale}/farmers`} className="block text-gray-700 hover:text-green-600">👨‍🌾 {t('farmers')}</Link>
+                <Link href={`/${locale}/messaging`} className="block text-gray-700 hover:text-green-600">💬 {t('messaging')}</Link>
+                <Link href={`/${locale}/profile`} className="block text-gray-700 hover:text-green-600">{t('profile')}</Link>
+                <Link href={`/${locale}/admin/dashboard`} className="block text-gray-700 hover:text-green-600">{t('admin')}</Link>
+                <button className="block w-full text-left text-red-500">{t('logout')}</button>
               </>
             ) : (
               <>
-                <Link href="/login" className="block text-gray-700 hover:text-green-600">Connexion</Link>
-                <Link href="/register" className="block bg-green-600 text-white px-4 py-2 rounded-lg text-center">Inscription</Link>
+                <Link href={`/${locale}/login`} className="block text-gray-700 hover:text-green-600">{t('login')}</Link>
+                <Link href={`/${locale}/register`} className="block bg-green-600 text-white px-4 py-2 rounded-lg text-center">{t('register')}</Link>
               </>
             )}
+            <div className="pt-2">
+              <LanguageSwitcher />
+            </div>
           </div>
         )}
       </div>
