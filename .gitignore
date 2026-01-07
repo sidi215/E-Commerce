@@ -254,3 +254,4 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 >>>>>>> origin/omar-my-agri
+public/videos/*.mp4
